@@ -1,4 +1,3 @@
-import {getRGB} from "./utils/functions"
 import "font-awesome/css/font-awesome.min.css"
 import BoxCheck from "./components/BoxCheck/BoxCheck"
 

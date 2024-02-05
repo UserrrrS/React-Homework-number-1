@@ -1,9 +1,16 @@
+import { useState } from "react";
 import "font-awesome/css/font-awesome.min.css"
 import BoxCheck from "./components/BoxCheck/BoxCheck"
 import FeatureCard from './components/FeatureCard/FeaturesCard';
 import featuresData from './components/FeatureCard/Features';
+import Modal from "./components/Modal/Modal";
+import "./index.css"
+
 
 const App = () => {
+
+  const [openModal, setOpenModal] = useState(true);
+
   return <>
   <header></header>
   <section className="Features">
@@ -17,13 +24,15 @@ const App = () => {
             text={feature.text}
           />
         ))}
-        <button>Попробовать бесплатно</button>
+        <button className="Features__btn" type="button" onClick={setOpenModal}>Попробовать бесплатно</button>
+        {openModal && <Modal setOpenModal={setOpenModal}/>}
       </div>
       
   </section>
   <section className="Box">
     <BoxCheck/>
   </section>
+  
   </>
 }
 

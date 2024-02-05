@@ -1,0 +1,106 @@
+.modal-wrapper {
+  position: fixed;
+  backdrop-filter: blur(5px);
+  background: linear-gradient(180deg, #2f2a37 0%, rgba(47, 42, 55, 0.416) 100%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  position: relative;
+  width: 425px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  max-height: 90.5vh;
+  padding: 50px 48px 37px 46px;
+  box-shadow: 0 5px 37px -1px rgba(0, 0, 0, 0.75);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(210, 210, 210, 0.723));
+
+}
+
+.modal__close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 27px;
+  height: 27px;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  transition: .4s;
+}
+
+.modal__close:hover {
+  border: 2px solid black;
+  color: #222;
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.info input {
+  padding: 0 0 11px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: black;
+  border: none;
+  border-bottom: 1px solid silver;
+  background: none;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.659);
+}
+
+.checkbox {
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+}
+
+
+.checkbox_text {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 120%;
+  color: rgb(119, 117, 117);
+}
+
+.checkBox-checkBox[type=checkbox] {
+  border-radius: 3px;
+  width: 16px;
+  height: 16px;
+}
+
+.send {
+  border-radius: 20px;
+  padding: 12px 16px;
+  width: 114px;
+  height: 41px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(129deg, #6bffca 0%, #00ff47 100%);
+  margin-top: -25px;
+}

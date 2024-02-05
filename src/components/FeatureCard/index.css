@@ -66,21 +66,3 @@
   font-weight: 500;
   line-height: 120%;
 }
-
-button {
-  width: 245px;
-  height: 55px;
-  border-radius: 40px;
-  border: 3px solid var(--gradient, #6BFFCA);
-  background: var(--gradient, linear-gradient(92deg, #6BFFCA 13.34%, #00FF47 129.97%));
-  margin: 84px 0;
-  color: var(--Ed-Space, #2F2A37);
-  -webkit-text-stroke-width: 3;
-  -webkit-text-stroke-color: #000;
-  font-family: Avenir;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%;
-  text-transform: uppercase;
-}

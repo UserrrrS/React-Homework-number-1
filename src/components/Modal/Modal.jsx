@@ -2,7 +2,8 @@ import {useState} from "react"
 import "./index.css";
 
 export default ({
-  setOpenModal}) => 
+  setOpenModal,
+    openModal}) => 
 {
 
   const [name, setName] = useState("");

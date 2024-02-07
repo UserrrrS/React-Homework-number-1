@@ -9,7 +9,7 @@ import "./index.css"
 
 const App = () => {
 
-  const [openModal, setOpenModal] = useState(true);
+  const [openModal, setOpenModal] = useState(false);
 
   return <>
   <header></header>

@@ -1,3 +1,7 @@
+.box {
+  margin: 0 156px 0 270px;
+}
+
 .Box__wrapper_small {
   display: flex;
   align-items: center;
@@ -20,6 +24,4 @@
   display: flex;
   flex-wrap: wrap;
   gap: 33px;
-  margin-left: 152px;
-  margin-right: 152px;
 }

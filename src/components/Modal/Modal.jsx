@@ -6,6 +6,9 @@ export default ({
     openModal}) => 
 {
 
+
+  
+
   const [name, setName] = useState("");
   const [org, setOrg] = useState("");
   const [post, setPost] = useState("")
@@ -73,3 +76,4 @@ export default ({
   </div>
 }
 
+// export const [setOpenModal, openModal] = [setOpenModal, openModal];

@@ -1,0 +1,36 @@
+.nav {
+  padding: 25px 0 23px 0;
+  box-shadow: 3px 3px 3px 3px rgba(192, 192, 192, 0.232);
+  background-color: #f3f6ef4a;
+}
+
+
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__wrapper_menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu_btn {
+  background-color: #f3f6ef4a;
+  cursor: pointer;
+  border: none;
+  transition: .4s;
+}
+
+.menu_btn:hover {
+  color: silver;
+  border-radius: 30px;
+}
+
+.nav_wrapper__lang {
+  background-color: #f3f6ef4a;
+  cursor: pointer;
+  border: none;
+  transition: .4s;
+}

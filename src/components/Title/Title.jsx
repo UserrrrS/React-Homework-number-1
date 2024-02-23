@@ -1,16 +1,3 @@
-import {useState} from "react"
 import "./index.css";
+import "../Modal/Modal.jsx"
 
-
-// export default ({}) => {
-//   return (
-//     <div className="title">
-//     <button className="features__btn" type="button" onClick={setOpenModal}>Попробовать бесплатно</button>
-//     {openModal && <Modal setOpenModal={setOpenModal}/>}
-//     </div>
-//   )
-// }
-
-export default ({}) => {
-  
-}

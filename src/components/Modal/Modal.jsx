@@ -6,9 +6,6 @@ export default ({
     openModal}) => 
 {
 
-
-  
-
   const [name, setName] = useState("");
   const [org, setOrg] = useState("");
   const [post, setPost] = useState("")

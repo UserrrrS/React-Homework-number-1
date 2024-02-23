@@ -1,10 +1,10 @@
 .features {
-  margin-top: 82px;
   margin: 0 auto;
-
+  padding-top: 82px;
 }
 
 .features h2 {
+  position: relative;
   color: #2F2A37;
   text-align: center;
   font-family: Avenir;
@@ -12,10 +12,10 @@
   font-style: normal;
   font-weight: 800;
   line-height: 115%;
-
 }
 
 .features>.container>p {
+  position: relative;
   color: #6E6C72;
   text-align: center;
   font-family: Avenir;
@@ -35,7 +35,6 @@
   align-items: center;
   margin-top: 84px;
   gap: 20px;
-  background-color: rgba(255, 255, 255, 0.178);
 }
 
 .feature-card {

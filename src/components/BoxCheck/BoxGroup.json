@@ -1,0 +1,38 @@
+[
+  {
+    "descr":"Неограниченное колличество учеников",
+    "check":"images/Check_img.svg"
+  },
+  {
+    "descr":"Трансляции",
+    "check":"images/Check_img.svg"
+  },
+  {
+    "descr":"Точнуя статистика",
+    "check":"images/Check_img.svg"
+  },
+  {
+    "descr":"Производительную видеосвязь с учениками ",
+    "check":"images/Check_img.svg"
+  },
+  {
+    "descr":"Продукт с ежемесячной подпиской",
+    "check":"images/Check_img.svg"
+  },
+  {
+    "descr":"Лучшая конфиденциальность и защита",
+    "check":"images/Check_img.svg"
+  },
+  {
+    "descr":"Готовый шаблон для организации обучения",
+    "check":"images/Check_img.svg"
+  },
+  {
+    "descr":"Сообщества",
+    "check":"images/Check_img.svg"
+  },
+  {
+    "descr":"Любое количество уроков и учебных программ",
+    "check":"images/Check_img.svg"
+  }
+]

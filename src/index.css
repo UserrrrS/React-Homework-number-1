@@ -130,3 +130,26 @@ h1 {
   right: -750px;
   z-index: -2;
 }
+
+.rights {
+  padding: 21px 0 19px 0;
+  background-color: #6BFFCA;
+}
+
+.rights__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rights__wrapper p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: #6E6C72;
+}
+
+.rights__logos {
+  display: flex;
+  gap: 30px;
+}

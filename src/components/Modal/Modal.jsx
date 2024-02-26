@@ -6,18 +6,20 @@ export default ({
     openModal}) => 
 {
 
+  
+
   const [name, setName] = useState("");
   const [org, setOrg] = useState("");
   const [post, setPost] = useState("")
   const [email, setEmail] = useState("")
   const [number, setNumber] = useState()
 
-
-
+ 
 
   const closeHandler = () => {
     setOpenModal(false)
   }
+
 
   const handler = (e) => {
     const data = {
@@ -29,8 +31,17 @@ export default ({
     }
     console.log(data);
     closeHandler();
+
+  };
+
+
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleCheckboxChange = (event) => {
+    setIsChecked(event.target.checked);
   }
 
+  
 
   return <div className="modal-wrapper">
     <div className="modal">
@@ -64,10 +75,10 @@ export default ({
           <input type="tel" placeholder="Телефон" value={number} onChange={(e) => setNumber(e.target.value)}/>
         </form>
         <form className="checkbox">
-            <label><input type="checkbox" className="checkBox-checkBox" name="checkbox" value="yes" /> </label>
+            <label><input type="checkbox" className="checkBox-checkBox" name="checkbox" checked={isChecked} onChange={handleCheckboxChange} value="yes" /> </label>
             <p className="checkbox-text">Я согласен на обработку моих <br/> <a href="http://pravo.gov.ru/proxy/ips/?docbody&nd=102108261" rel="noreferrer" target="_blank">персональных данных</a></p>
         </form>
-        <button onClick={handler} className="send"  >Отправить</button>
+        <button onClick={handler} disabled={!isChecked} className="send" >Отправить</button>
       </div>
     </div>
   </div>

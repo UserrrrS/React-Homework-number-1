@@ -7,6 +7,7 @@ import FeatureCard from './components/FeatureCard/FeaturesCard';
 import featuresData from './components/FeatureCard/Features';
 import Modal from "./components/Modal/Modal";
 import Nav from "./components/Nav/Nav"
+import Footer from "./components/Footer/Footer"
 import "./components/Title/index.css"
 import "./components/For-u/index.css"
 import "./index.css"
@@ -15,6 +16,9 @@ import "./index.css"
 
 
 const App = () => {
+
+
+  
 
   const  [openModal, setOpenModal] = useState(false);
  
@@ -96,7 +100,8 @@ const App = () => {
 
 
   <section className="box">
-  <img src="/images/Box_bcg.png" alt="" />
+  <img src="/images/Box_bcg-svg.svg" alt="" />
+  <img src="/images/Boc_bcg2.png" alt="" className="bcg-2"/> 
   <div className="zindex">
     <div className="container">
       <h2>Выбирайте Ed Space <br /> сегодня и вы получите</h2>
@@ -114,8 +119,10 @@ const App = () => {
           <h4 className="title-descr">Или разверните корпоративный учебный <br /> портал уже сегодня.</h4>
           <h2 className="online__price">Цена 250 рублей за 1 ученика в месяц</h2>
           <h5 className="online__ready">Все готово для запуска. Попробуйте 7-дневный демо-доступ.</h5>
-          <button className="features__btn" type="button" onClick={setOpenModal}>Попробовать бесплатно</button>
-        {openModal && <Modal setOpenModal={setOpenModal}/>}
+          
+          <button className="features__btn" type="button" 
+          onClick={setOpenModal}>Попробовать бесплатно</button>
+          {openModal && <Modal setOpenModal={setOpenModal}/>}
         </div>
 
         <div className="direction">
@@ -136,6 +143,24 @@ const App = () => {
   </div>
   </section>
   
+  <section className="footer">
+    <div className="container">
+      <Footer/> 
+    </div>
+  </section>
+
+  <section className="rights">
+    <div className="container">
+      <div className="rights__wrapper">
+      <p>2022 Ed Space. Все права защищены</p>
+      <div className="rights__logos">
+        <a href=""><img src="/images/vk-logo.svg" alt="logo-vk" /></a>
+        <a href=""><img src="/images/tel-logo.svg" alt="logo-vk" /></a>
+      </div>
+      </div>
+    </div>
+  </section>
+
   </>
 }
 

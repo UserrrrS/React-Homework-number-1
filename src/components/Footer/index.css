@@ -1,0 +1,37 @@
+.footer {
+  background-color: white;
+  padding: 103px 0 81px 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__wrapper-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 88px;
+}
+
+.link_item h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  color: #2F2A37;
+}
+
+li a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 122%;
+  color: #2F2A37;
+  text-decoration: none;
+}
+
+.list {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 26px;
+}

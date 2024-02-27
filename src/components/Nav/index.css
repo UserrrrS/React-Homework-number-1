@@ -11,6 +11,11 @@
   align-items: center;
 }
 
+.nav__wrapper a {
+  text-decoration: none;
+  color: black;
+}
+
 .nav__wrapper_menu {
   display: flex;
   gap: 40px;
@@ -29,6 +34,9 @@
 }
 
 .nav_wrapper__lang {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   background-color: #f3f6ef4a;
   cursor: pointer;
   border: none;

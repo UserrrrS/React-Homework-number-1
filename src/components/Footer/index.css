@@ -8,6 +8,11 @@
   justify-content: space-between;
 }
 
+.footer__wrapper a img {
+  width: 103px;
+  height: 103px;
+}
+
 .footer__wrapper-links {
   display: flex;
   justify-content: space-between;

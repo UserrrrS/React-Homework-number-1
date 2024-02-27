@@ -37,6 +37,16 @@
   gap: 20px;
 }
 
+.feature-cards-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 84px;
+  gap: 20px;
+  text-decoration: none;
+}
+
 .feature-card {
   display: flex;
   align-items: start;
@@ -49,6 +59,17 @@
   background: linear-gradient(139deg, #ffffff4d -21.71%, rgba(243, 246, 239, 0.00) 94.44%);
   box-shadow: 2px 2px 8px 3px rgba(192, 192, 192, 0.505);
   backdrop-filter: blur(5.5px);
+  transition: .5s;
+  text-decoration: none;
+}
+
+.feature-card:hover {
+  transform: scale(105%);
+  box-shadow: 0 0 3px 4px #36ff9e7c;
+}
+
+.feature-card:active {
+  transform: scale(102%);
 }
 
 .feature-card h3 {

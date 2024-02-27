@@ -4,21 +4,21 @@ import "./index.css"
 const Footer = ({}) => {
   return (
     <div className="footer__wrapper">
-      <img src="/images/logo_EdSpase.svg" alt="" />
+      <a href="http://localhost:3000"><img src="/images/logo_EdSpase.svg" alt="" /></a>
       <div className="footer__wrapper-links">
         <div className="link_item">
           <h4>Меню:</h4>
           <ul className="list">
-            <li><a href="">Возможности</a></li>
-            <li><a href="">Стоимость</a></li>
-            <li><a href="">Выбор Ed Space</a></li>
+            <li><a href="#features">Возможности</a></li>
+            <li><a href="#online">Стоимость</a></li>
+            <li><a href="#footer">Выбор Ed Space</a></li>
           </ul>
         </div>
         <div className="link_item">
           <h4>Документы:</h4>
           <ul className="list">
-            <li><a href="">Пользовательское соглашение</a></li>
-            <li><a href="">Публичная оферта</a></li>
+            <li><a target="_blank" href="https://geografikapark.ru/privacy-policy/terms-of-use.pdf">Пользовательское соглашение</a></li>
+            <li><a target="_blank" href="https://rt-static.rt.ru/sites/default/files/b2b/docs/help/dogovor_oferty.pdf">Публичная оферта</a></li>
           </ul>
         </div>
         <div className="link_item">

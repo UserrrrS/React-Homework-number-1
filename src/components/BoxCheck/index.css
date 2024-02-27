@@ -1,27 +1,39 @@
 .box {
   position: relative;
   padding-bottom: 94px;
+  background: url("Boc_bcg2.png") center center/cover no-repeat;
+
 }
 
+.zindex {
+  position: relative;
+  background: url("Box_bcg.png");
+  overflow: visible;
+  bottom: 70px;
+}
 
-.box>img {
+/* .box>img {
   position: absolute;
   width: 100%;
   z-index: -1;
   overflow: visible;
-  height: 1600px;
+  max-height: 100%;
   object-fit: cover;
   top: 95px;
-}
+  background-size: cover;
+  background-position: center;
+} */
 
-.box .bcg-2 {
+/* .box .bcg-2 {
   position: absolute;
   z-index: -2;
-  overflow: hidden;
   width: 100%;
   overflow: visible;
   top: 250px;
-}
+  max-height: 88%;
+  background-size: cover;
+  background-position: center;
+} */
 
 
 .box__wrapper {
@@ -39,7 +51,7 @@
   gap: 25px;
   text-align: center;
   padding: 18px 18px 21px 18px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   border-radius: 84px;
   background: linear-gradient(180deg, silver -13.5%, rgba(243, 246, 239, 0.00) 187.91%);
@@ -53,6 +65,7 @@
   text-align: center;
   padding-top: 82px;
   color: white;
+  padding-top: 190px;
 }
 
 .online {
@@ -77,7 +90,7 @@
 }
 
 .online__price {
-  font-weight: 800;
+  font-weight: 400;
   font-size: 30px;
   line-height: 120%;
   color: #6BFFCA;
@@ -85,9 +98,9 @@
 }
 
 .online__ready {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 120%;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 130%;
   margin-top: 15px;
   color: white;
 }
@@ -107,15 +120,15 @@
 }
 
 .direction__descr h4 {
-  font-weight: 800;
-  font-size: 24px;
+  font-weight: 500;
+  font-size: 22px;
   line-height: 120%;
   color: #6BFFCA;
   margin-top: 46px;
 }
 
 .direction__descr h5 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 120%;
   color: white;

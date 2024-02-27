@@ -29,6 +29,16 @@ h1 {
   margin: 0;
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+}
+
 .features {
   position: relative;
   overflow: hidden;

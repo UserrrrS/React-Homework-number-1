@@ -159,8 +159,8 @@ const App = () => {
       <div className="rights__wrapper">
       <p>2022 Ed Space. Все права защищены</p>
       <div className="rights__logos">
-        <a target="_blank" href="https://vk.com"><img src="/images/vk-logo.svg" alt="logo-vk" /></a>
-        <a target="_blank" href="https://web.telegram.org/a/"><img src="/images/tel-logo.svg" alt="logo-vk" /></a>
+        <a target="_blank" href="https://vk.com" rel="noreferrer"><img src="/images/vk-logo.svg" alt="logo-vk" /></a>
+        <a target="_blank" href="https://web.telegram.org/a/" rel="noreferrer"><img src="/images/tel-logo.svg" alt="logo-vk" /></a>
       </div>
       </div>
     </div>

@@ -13,18 +13,37 @@ export default () => {
     <section className="Title">
       <img src="/images/Title_ellipse.png" alt="" />
       <div className="container">
-        <div className="title__wrapper">
+        <div className="title__wrapper pages">
           <div className="title__wrapper_content">
-            <h1 className="content__title">Ed Space <br /> Ваши знания <br /> и экспертность обретут здесь <br /> форму</h1>
-            <h4 className="content__text">Мощный инструмент для организации <br />обучения. Ваши ученики будут в восторге!</h4>
+            <h1 className="content__title"> Записи хранятся<br /> на платформе</h1>
+            <h4 className="content__text">Спланируйте расписание курсов <br />самым удобным образом<div className="br"></div> Больше никаких накладок и переносов.</h4>
             <button className="features__btn" type="button" onClick={setOpenModal}>Попробовать бесплатно</button>
             {openModal && <Modal setOpenModal={setOpenModal}/>}
           </div>
-          <img src="/images/Title_pic.png" alt="title_pic" />
+          <img className="pages_img" src="/images/Frame-6.svg" alt="title_pic" />
         </div>
       </div>
     </section>
   </header>
+
+      <section className="textblock">
+        <div className="container">
+          <div className="textblock__wrapper">
+            <h2>Все ваши данные защищены <br />по всем возможным стандартам ! &#128274;</h2>
+            <h3>Удобная система планирования занятий !&#128198;</h3>
+          </div>
+          <div id="online" className="online">
+          <h2 className="online__title">Запустите свою онлайн-школу</h2>
+          <h4 className="title-descr">Или разверните корпоративный учебный <br /> портал уже сегодня.</h4>
+          <h2 className="online__price">Цена 250 рублей за 1 ученика в месяц</h2>
+          <h5 className="online__ready">Все готово для запуска. Попробуйте <br />7-дневный демо-доступ.</h5>
+          
+          <button className="features__btn" type="button" 
+          onClick={setOpenModal}>Попробовать бесплатно</button>
+          {openModal && <Modal setOpenModal={setOpenModal}/>}
+        </div>
+        </div>
+      </section>
 
   <section className="footer">
     <div className="container">
@@ -37,8 +56,8 @@ export default () => {
       <div className="rights__wrapper">
       <p>2022 Ed Space. Все права защищены</p>
       <div className="rights__logos">
-      <a target="_blank" href="https://vk.com"><img src="/images/vk-logo.svg" alt="logo-vk" /></a>
-        <a target="_blank" href="https://web.telegram.org/a/"><img src="/images/tel-logo.svg" alt="logo-vk" /></a>
+      <a target="_blank" href="https://vk.com" rel="noreferrer"><img src="/images/vk-logo.svg" alt="logo-vk" /></a>
+        <a target="_blank" href="https://web.telegram.org/a/" rel="noreferrer"><img src="/images/tel-logo.svg" alt="logo-vk" /></a>
       </div>
       </div>
     </div>

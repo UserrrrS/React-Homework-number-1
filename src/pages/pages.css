@@ -1,0 +1,29 @@
+.pages_img {
+  margin-top: 0 !important;
+}
+
+.pages {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textblock {
+  background-color: #242029;
+  padding-top: 30px;
+}
+
+.textblock__wrapper>h2 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 115%;
+  color: white;
+  margin-top: 40px;
+}
+
+.textblock__wrapper>h3 {
+  font-weight: 500;
+  font-size: 30px;
+  color: white;
+  margin-top: 15px;
+  line-height: 120%;
+}

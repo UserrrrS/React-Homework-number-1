@@ -4,6 +4,7 @@ import Home from "./Home"
 import Modal from "../components/Modal/Modal"
 import Nav from "../components/Nav/Nav"
 import Footer from "../components/Footer/Footer"
+import "./pages.css"
 
 export default () => {
   const  [openModal, setOpenModal] = useState(false);
@@ -13,18 +14,37 @@ export default () => {
     <section className="Title">
       <img src="/images/Title_ellipse.png" alt="" />
       <div className="container">
-        <div className="title__wrapper">
+        <div className="title__wrapper pages">
           <div className="title__wrapper_content">
-            <h1 className="content__title">Ed Space <br /> Ваши знания <br /> и экспертность обретут здесь <br /> форму</h1>
-            <h4 className="content__text">Мощный инструмент для организации <br />обучения. Ваши ученики будут в восторге!</h4>
+            <h1 className="content__title">Полная <br />организация <br /> учебного <br /> процесса</h1>
+            <h4 className="content__text">Управляйте процессом обучени<div className="br"></div> Наблюдайте за будущими, текущими <br /> и завершенными курсами в однои окне.</h4>
             <button className="features__btn" type="button" onClick={setOpenModal}>Попробовать бесплатно</button>
             {openModal && <Modal setOpenModal={setOpenModal}/>}
           </div>
-          <img src="/images/Title_pic.png" alt="title_pic" />
+          <img className="pages_img" src="/images/Frame-1.svg" alt="title_pic" />
         </div>
       </div>
     </section>
   </header>
+
+  <section className="textblock">
+        <div className="container">
+          <div className="textblock__wrapper">
+            <h2>НЕ БЕСПОКОЙТЕСЬ &#128552;<br/> Мы конечно же организум все за вас ,<br /> вам остается только смотреть ламповые уроки и выполнять домашечки &#128187;</h2>
+            <h3>Также , вы можете заглянуть в будещее и посмотреть ,<br /> что вас ждет на этом курсе , не , ну шок конечно...&#128125; </h3>
+          </div>
+          <div id="online" className="online">
+          <h2 className="online__title">Запустите свою онлайн-школу</h2>
+          <h4 className="title-descr">Или разверните корпоративный учебный <br /> портал уже сегодня.</h4>
+          <h2 className="online__price">Цена 250 рублей за 1 ученика в месяц</h2>
+          <h5 className="online__ready">Все готово для запуска. Попробуйте <br />7-дневный демо-доступ.</h5>
+          
+          <button className="features__btn" type="button" 
+          onClick={setOpenModal}>Попробовать бесплатно</button>
+          {openModal && <Modal setOpenModal={setOpenModal}/>}
+        </div>
+        </div>
+      </section>
 
   <section className="footer">
     <div className="container">

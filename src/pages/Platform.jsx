@@ -13,18 +13,37 @@ export default () => {
     <section className="Title">
       <img src="/images/Title_ellipse.png" alt="" />
       <div className="container">
-        <div className="title__wrapper">
+        <div className="title__wrapper pages">
           <div className="title__wrapper_content">
-            <h1 className="content__title">Ed Space <br /> Ваши знания <br /> и экспертность обретут здесь <br /> форму</h1>
-            <h4 className="content__text">Мощный инструмент для организации <br />обучения. Ваши ученики будут в восторге!</h4>
+            <h1 className="content__title">Мониторинг <br />посещения <br />занятий</h1>
+            <h4 className="content__text">Просматривайте посещаемость <br />каждого ученика на курсе<div className="br"></div> Отстающих больше не будет.</h4>
             <button className="features__btn" type="button" onClick={setOpenModal}>Попробовать бесплатно</button>
             {openModal && <Modal setOpenModal={setOpenModal}/>}
           </div>
-          <img src="/images/Title_pic.png" alt="title_pic" />
+          <img className="pages_img" src="/images/Frame-5.svg" alt="title_pic" />
         </div>
       </div>
     </section>
   </header>
+
+  <section className="textblock">
+        <div className="container">
+          <div className="textblock__wrapper">
+            <h2>Удобная навигация по сайту. <br />Иногда , даже слишком &#128513; </h2>
+            <h3>Вы можете подсматривать за другими учениками , <br />только тсс... &#129323;</h3>
+          </div>
+          <div id="online" className="online">
+          <h2 className="online__title">Запустите свою онлайн-школу</h2>
+          <h4 className="title-descr">Или разверните корпоративный учебный <br /> портал уже сегодня.</h4>
+          <h2 className="online__price">Цена 250 рублей за 1 ученика в месяц</h2>
+          <h5 className="online__ready">Все готово для запуска. Попробуйте <br />7-дневный демо-доступ.</h5>
+          
+          <button className="features__btn" type="button" 
+          onClick={setOpenModal}>Попробовать бесплатно</button>
+          {openModal && <Modal setOpenModal={setOpenModal}/>}
+        </div>
+        </div>
+      </section>
 
   <section className="footer">
     <div className="container">

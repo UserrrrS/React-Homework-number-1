@@ -7,6 +7,15 @@ import Footer from "../components/Footer/Footer"
 import "./pages.css"
 
 export default () => {
+  const [isBtnActive, setIsBtnActive] = useState(true);
+
+  const handleOpenModal = () => {
+    setOpenModal(true);
+  };
+
+  const handleDisableButton = () => {
+    setIsBtnActive(false);
+  };
   const  [openModal, setOpenModal] = useState(false);
   return <>
     <header>
@@ -18,8 +27,9 @@ export default () => {
           <div className="title__wrapper_content">
             <h1 className="content__title">Управляйте <br />расписанием <br />занятий</h1>
             <h4 className="content__text">Спланируйте расписание курсов <br />самым удобным образом. <br /> Больше никаких накладок и переносов.</h4>
-            <button className="features__btn" type="button" onClick={setOpenModal}>Попробовать бесплатно</button>
-            {openModal && <Modal setOpenModal={setOpenModal}/>}
+            <button className={'features__btn ' + (isBtnActive ? '' : 'disabled')}
+          onClick={handleOpenModal} disabled={!isBtnActive}>Попробовать бесплатно</button>
+          {openModal && (<Modal setOpenModal={setOpenModal} disableButton={handleDisableButton}/>)}
           </div>
           <img className="pages_img" src="/images/Frame-2.svg" alt="title_pic" />
         </div>
@@ -31,7 +41,7 @@ export default () => {
         <div className="container">
           <div className="textblock__wrapper">
             <h2>У нас, ну ооочень , удобный график занятий , <br />ну а если он вам не подойдет , <br />то вы всегда сможете посмотреть online-записи &#129300;</h2>
-            <h3>Как говорится "Делу — время, а потехе — час." <br />Но , тут стоит признать , что наши уроки и дельные и развлекательные	&#128521;</h3>
+            <h3>Как говорится "Делу — время, а потехе — час." <br />Но , тут стоит признаться , что наши уроки и дельные и развлекательные	&#128521;</h3>
           </div>
           <div id="online" className="online">
           <h2 className="online__title">Запустите свою онлайн-школу</h2>
@@ -39,9 +49,9 @@ export default () => {
           <h2 className="online__price">Цена 250 рублей за 1 ученика в месяц</h2>
           <h5 className="online__ready">Все готово для запуска. Попробуйте <br />7-дневный демо-доступ.</h5>
           
-          <button className="features__btn" type="button" 
-          onClick={setOpenModal}>Попробовать бесплатно</button>
-          {openModal && <Modal setOpenModal={setOpenModal}/>}
+          <button className={'features__btn ' + (isBtnActive ? '' : 'disabled')}
+          onClick={handleOpenModal} disabled={!isBtnActive}>Попробовать бесплатно</button>
+          {openModal && (<Modal setOpenModal={setOpenModal} disableButton={handleDisableButton}/>)}
         </div>
         </div>
       </section>

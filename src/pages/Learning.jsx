@@ -6,6 +6,15 @@ import Nav from "../components/Nav/Nav"
 import Footer from "../components/Footer/Footer"
 
 export default () => {
+  const [isBtnActive, setIsBtnActive] = useState(true);
+
+  const handleOpenModal = () => {
+    setOpenModal(true);
+  };
+
+  const handleDisableButton = () => {
+    setIsBtnActive(false);
+  };
   const  [openModal, setOpenModal] = useState(false);
   return <>
     <header>
@@ -17,8 +26,9 @@ export default () => {
           <div className="title__wrapper_content">
             <h1 className="content__title">Администрирование домашних заданий</h1>
             <h4 className="content__text">Отслеживайте прогресс обучения<br /> индивидуально по каждому ученику.</h4>
-            <button className="features__btn" type="button" onClick={setOpenModal}>Попробовать бесплатно</button>
-            {openModal && <Modal setOpenModal={setOpenModal}/>}
+            <button className={'features__btn ' + (isBtnActive ? '' : 'disabled')}
+          onClick={handleOpenModal} disabled={!isBtnActive}>Попробовать бесплатно</button>
+          {openModal && (<Modal setOpenModal={setOpenModal} disableButton={handleDisableButton}/>)}
           </div>
           <img className="pages_img" src="/images/Frame-3.svg" alt="title_pic" />
         </div>
@@ -38,9 +48,9 @@ export default () => {
           <h2 className="online__price">Цена 250 рублей за 1 ученика в месяц</h2>
           <h5 className="online__ready">Все готово для запуска. Попробуйте <br />7-дневный демо-доступ.</h5>
           
-          <button className="features__btn" type="button" 
-          onClick={setOpenModal}>Попробовать бесплатно</button>
-          {openModal && <Modal setOpenModal={setOpenModal}/>}
+          <button className={'features__btn ' + (isBtnActive ? '' : 'disabled')}
+          onClick={handleOpenModal} disabled={!isBtnActive}>Попробовать бесплатно</button>
+          {openModal && (<Modal setOpenModal={setOpenModal} disableButton={handleDisableButton}/>)}
         </div>
         </div>
       </section>

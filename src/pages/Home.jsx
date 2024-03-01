@@ -28,6 +28,15 @@ const App = () => {
   
 
   const  [openModal, setOpenModal] = useState(false);
+  const [isBtnActive, setIsBtnActive] = useState(true);
+
+  const handleOpenModal = () => {
+    setOpenModal(true);
+  };
+
+  const handleDisableButton = () => {
+    setIsBtnActive(false);
+  };
  
   return <>
   <header>
@@ -39,8 +48,9 @@ const App = () => {
           <div className="title__wrapper_content">
             <h1 className="content__title">Ed Space <br /> Ваши знания <br /> и экспертность обретут здесь <br /> форму</h1>
             <h4 className="content__text">Мощный инструмент для организации <br />обучения. Ваши ученики будут в восторге!</h4>
-            <button className="features__btn" type="button" onClick={setOpenModal}>Попробовать бесплатно</button>
-            {openModal && <Modal setOpenModal={setOpenModal}/>}
+            <button className={'features__btn ' + (isBtnActive ? '' : 'disabled')}
+          onClick={handleOpenModal} disabled={!isBtnActive}>Попробовать бесплатно</button>
+          {openModal && (<Modal setOpenModal={setOpenModal} disableButton={handleDisableButton}/>)}
           </div>
           <img src="/images/Title_pic.png" alt="title_pic" />
         </div>
@@ -77,8 +87,9 @@ const App = () => {
           </div>
         </div>
         <div className="btn-pos">        
-        <button className="features__btn" type="button" onClick={setOpenModal}>Попробовать бесплатно</button>
-        {openModal && <Modal setOpenModal={setOpenModal}/>}
+        <button className={'features__btn ' + (isBtnActive ? '' : 'disabled')}
+          onClick={handleOpenModal} disabled={!isBtnActive}>Попробовать бесплатно</button>
+          {openModal && (<Modal setOpenModal={setOpenModal} disableButton={handleDisableButton}/>)}
         </div>
       </div>
     </div>
@@ -91,16 +102,18 @@ const App = () => {
         <h2>Возможности ed space</h2>
       <p>Поможем перенести корпоративную академию, базу знаний, учебные курсы, настроим систему мотивации обучения, круглосуточная поддержка.</p>
       <div className="feature-cards">
-        {featuresData.map(feature  => (
+        {featuresData.map((feature, index) => (
           <FeatureCard
+            key={index}
             image={feature.image}
             title={feature.title}
             text={feature.text}
             to={feature.to}
           />
         ))}
-        <button className="features__btn" type="button" onClick={setOpenModal}>Попробовать бесплатно</button>
-        {openModal && <Modal setOpenModal={setOpenModal}/>}
+          <button className={'features__btn ' + (isBtnActive ? '' : 'disabled')}
+          onClick={handleOpenModal} disabled={!isBtnActive}>Попробовать бесплатно</button>
+          {openModal && (<Modal setOpenModal={setOpenModal} disableButton={handleDisableButton}/>)}
         </div>
       </div>
   </section>
@@ -111,8 +124,9 @@ const App = () => {
     <div className="container">
       <h2>Выбирайте Ed Space <br /> сегодня и вы получите</h2>
           <div className="box__wrapper">
-                    {BoxData.map(box => (
+                    {BoxData.map((box, index) => (
                 <BoxCheck
+                key={index}
                 descr={box.descr}
                 check={box.check}
                 />
@@ -125,9 +139,9 @@ const App = () => {
           <h2 className="online__price">Цена 250 рублей за 1 ученика в месяц</h2>
           <h5 className="online__ready">Все готово для запуска. Попробуйте <br />7-дневный демо-доступ.</h5>
           
-          <button className="features__btn" type="button" 
-          onClick={setOpenModal}>Попробовать бесплатно</button>
-          {openModal && <Modal setOpenModal={setOpenModal}/>}
+          <button className={'features__btn ' + (isBtnActive ? '' : 'disabled')}
+          onClick={handleOpenModal} disabled={!isBtnActive}>Попробовать бесплатно</button>
+          {openModal && (<Modal setOpenModal={setOpenModal} disableButton={handleDisableButton}/>)}
         </div>
 
         <div className="direction">

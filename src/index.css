@@ -163,3 +163,17 @@ body {
   display: flex;
   gap: 30px;
 }
+
+.disabled {
+  color: grey;
+  background-color: #ccc;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  border: 18px solid grey;
+  /* Add any additional styling here */
+}
+
+.disa .disable::after {
+  content: 'Форма отправлена';
+  background-color: grey !important;
+}

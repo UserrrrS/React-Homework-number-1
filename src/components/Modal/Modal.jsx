@@ -3,7 +3,7 @@ import "./index.css";
 
 export default ({
   setOpenModal,
-    openModal}) => 
+    openModal, disableButton}) => 
 {
 
   
@@ -21,7 +21,7 @@ export default ({
   }
 
 
-  const handler = (e) => {
+  const handleSubmit = (e) => {
     const data = {
       name,
       org,
@@ -31,7 +31,7 @@ export default ({
     }
     console.log(data);
     closeHandler();
-
+    disableButton();
   };
 
 
@@ -40,8 +40,6 @@ export default ({
   const handleCheckboxChange = (event) => {
     setIsChecked(event.target.checked);
   }
-
-  
 
   return <div className="modal-wrapper">
     <div className="modal">
@@ -78,7 +76,7 @@ export default ({
             <label><input type="checkbox" className="checkBox-checkBox" name="checkbox" checked={isChecked} onChange={handleCheckboxChange} value="yes" /> </label>
             <p className="checkbox-text">Я согласен на обработку моих <br/> <a href="http://pravo.gov.ru/proxy/ips/?docbody&nd=102108261" rel="noreferrer" target="_blank">персональных данных</a></p>
         </form>
-        <button onClick={handler} disabled={!isChecked} className="send" >Отправить</button>
+        <button onClick={handleSubmit} disabled={!isChecked} className="send" >Отправить</button>
       </div>
     </div>
   </div>
